@@ -1,24 +1,11 @@
-import Navbar from '@/app/_components/Home/navbar'
-import React from 'react'
-import Sidenav from '@/app/_components/mentor_dash/Sidenav'
-import Maincontent from '@/app/_components/mentor_dash/Maincontent'
-import Calendar from '@/app/_components/mentor_dash/Calendar'
-
-function Page() {
+import Image from "next/image";
+import Navbar from "./_component/Home/Navbar";
+import Hero from "./_component/Home/hero";
+export default function Home() {
   return (
-    <div>
+    <section>
       <Navbar />
- 
-      <div className="container mx-auto flex mt-6">
-        <Sidenav />
-
-        <Maincontent/>
-      
-        <Calendar />
-        
-      </div>
-    </div>
+      <Hero />
+    </section>
   );
 }
-
-export default Page;
